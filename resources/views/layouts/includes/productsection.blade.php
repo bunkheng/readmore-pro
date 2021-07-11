@@ -339,7 +339,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="live__product">
+                 {{-- <div class="live__product">
                      <div class="row">
                          <div class="col-lg-8 col-md-8 col-sm-8">
                              <div class="section-title">
@@ -450,7 +450,7 @@
                              </div>
                          </div>
                      </div>
-                 </div>
+                 </div> --}}
              </div>
              <div class="col-lg-4 col-md-6 col-sm-8">
                  <div class="product__sidebar">

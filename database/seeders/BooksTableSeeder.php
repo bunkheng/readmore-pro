@@ -17,7 +17,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             [
                 'title' => 'The Seven Deadly Sins: Wrath of the Gods',
-                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah.',
+                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse.',
                 'genre' => 'Action, Adventure',
                 'rating' => '9.2 / 10',
                 'volume' => '100',
@@ -28,7 +28,7 @@ class BooksTableSeeder extends Seeder
             ],
             [
                 'title' => 'Yuru Camp!',
-                'description' => 'While the perfect getaway for most girls her age might be a fancy vacation with their loved ones, Rin Shima ideal way of spending her days off is camping alone at the base of Mount Fuji.',
+                'description' => 'While the perfect getaway for most girls her age might be a fancy vacation with their loved ones ',
                 'genre' => 'Slice of Life, Comedy',
                 'rating' => '8.27 / 10',
                 'volume' => '20',
@@ -39,7 +39,7 @@ class BooksTableSeeder extends Seeder
             ],
             [
                 'title' => 'Shingeki no Kyojin Season 3 Part 2',
-                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah.',
+                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse.',
                 'genre' => 'Action, Supernatural',
                 'rating' => '9.1 / 10',
                 'volume' => '200',
@@ -50,7 +50,7 @@ class BooksTableSeeder extends Seeder
             ],
             [
                 'title' => 'Fullmetal Alchemist: Brotherhood',
-                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah.',
+                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse.',
                 'genre' => 'Action, Supernatural',
                 'rating' => '8.6 / 10',
                 'volume' => '100',
@@ -61,7 +61,7 @@ class BooksTableSeeder extends Seeder
             ],
             [
                 'title' => 'Shiratorizawa Gakuen Koukou',
-                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah.',
+                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse.',
                 'genre' => 'Drama, Romance',
                 'rating' => '7.8 / 10',
                 'volume' => '80',
@@ -72,7 +72,7 @@ class BooksTableSeeder extends Seeder
             ],
             [
                 'title' => 'Code Geass: Hangyaku no Lelouch R2',
-                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah.',
+                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse.',
                 'genre' => 'Action, Supernatural',
                 'rating' => '8.6 / 10',
                 'volume' => '150',
@@ -83,7 +83,7 @@ class BooksTableSeeder extends Seeder
             ],
             [
                 'title' => 'Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien',
-                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah.',
+                'description' => 'That Time I Got Reincarnated as a Slime also known as TenSura or Slime Isekai is a Japanese fantasy light novel series written by Fuse.',
                 'genre' => 'Action, Supernatural',
                 'rating' => '8.2 / 10',
                 'volume' => '60',
@@ -94,7 +94,7 @@ class BooksTableSeeder extends Seeder
             ],
             [
                 'title' => 'Solo Leveling',
-                'description' => 'Ten years ago, "the Gate" appeared and connected the real world with the realm of magic and monsters. To combat these vile beasts, ordinary people received superhuman powers and became known as "Hunters.',
+                'description' => 'Ten years ago, "the Gate" appeared and connected the real world with the realm of magic and monsters.',
                 'genre' => 'Action, Adventure, Fantasy',
                 'rating' => '8.86 / 10',
                 'volume' => '160',

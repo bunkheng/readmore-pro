@@ -19,8 +19,11 @@ class CreateBookTable extends Migration
             $table->string('description');
             $table->string('genre');
             $table->string('rating');
+            $table->string('status')->default('FALSE');
             $table->integer('volume');
             $table->string('img');
+            $table->string('slideimg');
+            $table->string('readSrc');
             $table->timestamps();
         });
     }

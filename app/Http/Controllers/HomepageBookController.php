@@ -3,16 +3,44 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Models\Book;
 
-class BookController extends Controller
+class HomepageBookController extends Controller
 {
     public function index(Request $request)
     {
         $books = Book::all();
-        return view('adminbook.index',compact('books'));
+        return view('layouts.homepage', ['books' => $books]);
+    }
 
+    // public function index2(Request $request)
+    // {
+    //     $books = Book::all();
+    //     return view('layouts.homepage', ['books' => $books]);
+    // }
+    public function index3(Request $request)
+    {
+        $books = Book::all();
+        return view('layouts.bookmark', ['books' => $books]);
+    }
+
+
+    public function index4(Request $request)
+    {
+        $books = Book::all();
+        return view('layouts.genre', ['books' => $books]);
+    }
+
+    public function index5(Request $request)
+    {
+        $books = Book::all();
+        return view('layouts.chapter', ['books' => $books]);
+    }
+
+    public function index6(Request $request)
+    {
+        $books = Book::all();
+        return view('layouts.chapter1', ['books' => $books]);
     }
 
     /**
@@ -23,7 +51,7 @@ class BookController extends Controller
     public function create()
     {
         // $books = Book::pluck('name','name')->all();
-        return view('adminbook.create');
+        // return view('book.create');
     }
 
     /**
@@ -34,7 +62,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
             'genre' => 'required',
@@ -42,16 +70,15 @@ class BookController extends Controller
             'volume' => 'required',
             'status' => 'required',
             'img' => 'required',
-            'slideimg' => 'required',
             'readSrc' => 'required',
         ]);
 
-        // $input = $request->all();
+        $input = $request->all();
 
         Book::create($request->all());
 
         return redirect()->route('books.index')
-                        ->with('success','Book created successfully');
+            ->with('success', 'Book created successfully');
     }
 
     /**
@@ -74,7 +101,7 @@ class BookController extends Controller
      */
     public function edit(Book $book)
     {
-        return view('adminbook.edit',compact('book'));
+        // return view('book.edit',compact('book'));
     }
 
     /**
@@ -84,16 +111,24 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function update(Request $request, Book $book)
     {
-        $request -> validate([
-
-        ]);
+        $request->validate([]);
 
         $book->update($request->all());
-            return redirect()->route('books.index')
-            ->with('success', 'Book Updated Successfully.');
 
+        
+        // return view('layouts.book-dt')->with('book', $data);
+        return view('layouts.book-dt')
+            ->with('book', $data);
+    }
+    public function destroy(Book $book)
+    {
+        // $book->delete();
+
+        // return redirect()->route('bookings.index')
+        // ->with('success', 'Booking Deleted Successfully.');
     }
 
     /**
@@ -102,10 +137,4 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Book $book)
-    {
-        $book ->delete();
-        return redirect()->route('books.index')
-                        ->with('success','Book deleted successfully');
-    }
 }
